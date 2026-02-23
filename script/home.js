@@ -64,6 +64,22 @@ let jobData = [
         desc: 'We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.',
         status: 'none',
     },
+    {
+        id: 9,
+        company: 'Global Tech Firm',
+        role: 'Software Developer',
+        meta: 'Barmingham, UK • Full-time • $140,000 - $155,000',
+        desc: 'Global Tech Firm is a software technology venture studio that develops custom products across multiple sectors of the economy.',
+        status: 'none',
+    },
+    {
+        id: 10,
+        company: 'NVIDIA',
+        role: 'Developer Technology Engineer - AI',
+        meta: 'Korea, Seoul • Full-time • $155,000 - $190,000',
+        desc: 'NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people.',
+        status: 'none',
+    },
 ];
 
 function setFilter(filter) {
