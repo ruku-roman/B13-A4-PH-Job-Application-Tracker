@@ -90,11 +90,11 @@ function updateUI() {
     );
 
     // Update Dashboard Counters
-    document.getElementById('total-count').innerText =
+    document.getElementById('totalCount').innerText =
         jobData.length;
-    document.getElementById('interview-count').innerText =
+    document.getElementById('interviewCount').innerText =
         jobData.filter((j) => j.status === 'interview').length;
-    document.getElementById('rejected-count').innerText =
+    document.getElementById('rejectedCount').innerText =
         jobData.filter((j) => j.status === 'rejected').length;
     document.getElementById('tab-count-text').innerText =
         `${filteredJobs.length} jobs`;
