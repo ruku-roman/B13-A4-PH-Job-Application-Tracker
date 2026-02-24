@@ -1,5 +1,5 @@
 let currentFilter = 'all';
-let jobData = [
+let jobInfo = [
     {
         id: 1,
         company: 'Mobile First Corp',
@@ -88,30 +88,30 @@ function setFilter(filter) {
 }
 
 function toggleStatus(id, newStatus) {
-    const job = jobData.find((j) => j.id === id);
+    const job = jobInfo.find((j) => j.id === id);
     job.status = job.status === newStatus ? 'none' : newStatus;
     updateUI();
 }
 
 function deleteJob(id) {
-    jobData = jobData.filter((j) => j.id !== id);
+    jobInfo = jobInfo.filter((j) => j.id !== id);
     updateUI();
 }
 
 function updateUI() {
     const container = document.getElementById('job-container');
-    const filteredJobs = jobData.filter(
+    const filteredJobs = jobInfo.filter(
         (j) =>
             currentFilter === 'all' || j.status === currentFilter,
     );
 
     // Update Dashboard Counters
     document.getElementById('totalCount').innerText =
-        jobData.length;
+        jobInfo.length;
     document.getElementById('interviewCount').innerText =
-        jobData.filter((j) => j.status === 'interview').length;
+        jobInfo.filter((j) => j.status === 'interview').length;
     document.getElementById('rejectedCount').innerText =
-        jobData.filter((j) => j.status === 'rejected').length;
+        jobInfo.filter((j) => j.status === 'rejected').length;
     document.getElementById('tab-count-text').innerText =
         `${filteredJobs.length} jobs`;
 
