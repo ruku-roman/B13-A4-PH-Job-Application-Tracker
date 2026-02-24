@@ -1,5 +1,7 @@
-1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-Answer: 
+## 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+
+**Answer:**
+
 a)	getElementById() selects a single element using its unique id and returns one element. It is simple and usually the fastest method.
 b)	getElementsByClassName() selects elements using a class name and returns a live HTMLCollection, meaning it automatically updates when the DOM changes.
 c)	querySelector() uses CSS selectors (like #id, .class, div p, etc.) and returns only the first matching element.
@@ -8,8 +10,10 @@ e)	Live vs Static: getElementsByClassName() is live, while querySelectorAll() is
 f)	Flexibility: querySelector() and querySelectorAll() are more flexible because they support full CSS selector syntax.
 g)	Modern Usage: In modern development, querySelector() and querySelectorAll() are often preferred due to their flexibility and cleaner syntax.
 
-2. How do you create and insert a new element into the DOM?
-Answer: 
+## 2. How do you create and insert a new element into the DOM?
+
+**Answer:**
+
 a. Create the element – Use document.createElement() to create a new HTML element.
 const newDiv = document.createElement("div");
 b. Add content – Set text or HTML inside the element using textContent or innerHTML.
@@ -22,8 +26,10 @@ const parent = document.body;
 e. Insert into the DOM – Use append(), appendChild(), prepend(), or insertBefore().
 parent.appendChild(newDiv);
 
-3. What is Event Bubbling? And how does it work?
-Answer: 
+## 3. What is Event Bubbling? And how does it work?
+
+**Answer:**
+
 Event Bubbling is when an event starts on a child element and then bubbles up to its parent elements in the DOM. For example, if you click a button inside a div, the button’s click event runs first, then the div’s click event.
 Example:
 <div id="parent">
@@ -40,8 +46,10 @@ Output when button is clicked:
 Child clicked
 Parent clicked
 
-4. What is Event Delegation in JavaScript? Why is it useful?
-Answer: 
+## 4. What is Event Delegation in JavaScript? Why is it useful?
+
+**Answer:**
+
 Event Delegation is a technique in JavaScript where you attach a single event listener to a parent element instead of multiple listeners on individual child elements. Because of event bubbling, the parent can handle events for its current and future child elements.
 It is useful as
 a) Better performance – fewer event listeners are needed.
@@ -60,8 +68,10 @@ document.getElementById("list").addEventListener("click", function(e) {
 });
 
 
-5. What is the difference between preventDefault() and stopPropagation() methods?
-Answer: 
+## 5. What is the difference between preventDefault() and stopPropagation() methods?
+
+**Answer:**
+
 Difference between preventDefault() and stopPropagation() methods:
 a. Purpose:
 •	preventDefault() stops the browser’s default action (like link navigation or form submission).
